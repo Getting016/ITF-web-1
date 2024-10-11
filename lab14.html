@@ -7,21 +7,22 @@
     <link rel="stylesheet" href="lab14.css">
 </head>
 <body style="text-align: center;">
-    <h1 id = "username">Username</h1>
-    <div class="profile" id = "profile" style= "background-image: url(https://wallpapers.com/images/hd/cool-profile-picture-87h46gcobjl5e4xu.jpg);">
+    <h1 id = "username" style="margin-top: 20px;">Username</h1>
+    <div class="profile" id = "profile" style= "background-image: url(https://imgix.bustle.com/uploads/shutterstock/2022/1/10/a336ba51-3cc8-4f5e-935b-9ac7f7b05271-shutterstock-2008512365.jpg?w=400&h=300&fit=crop&crop=faces&q=50&dpr=2);">
         <p>
             1
         </p>
     </div>
-    <label for="">Set Username</label>
-    <input style="margin-top: 20px; padding: 10px; border-radius: 10px;" type="text" placeholder="Name" id = "input"><button style="margin-left: 10px; padding: 5px; width: 50px; border-radius: 10%;" onclick="setImage()">SET</button>
+    <label for="input">Set Username</label>
+    <input style="margin-top: 20px; padding: 10px; border-radius: 10px;"type="text" placeholder="Name" id = "input"><button style="margin-left: 10px; padding: 5px; width: 50px; border-radius: 10%;" onclick="setUsername()">SET</button>
     <br>
-    <label for="">Set Profile</label>
-    <input style="margin-top: 20px; padding: 10px; border-radius: 10px;"type="text" placeholder="Profile" id="profile"><button style="margin-left: 10px; padding: 5px; width: 50px; border-radius: 10%;"  onclick="setImage()">SET</button>
-    <script>
+    <label for="profileInput">Url Profile</label>
+    <input style="margin-top: 20px; padding: 10px; border-radius: 10px;"type="text" placeholder="Name" id = "profileInput"><button style="margin-left: 10px; padding: 5px; width: 50px; border-radius: 10%;" onclick="setImage()">SET</button>
+        <script>
         const username = document.getElementById("username");
         const input = document.getElementById("input");
         const profile = document.getElementById("profile");
+        const profileInput = document.getElementById("profileInput")
 
         username.textContent = "Hello";
 
@@ -32,7 +33,8 @@
         };
 
         function setImage() {
-            profile.style.backgroundImage = "url(" + input.value + ")";
+            profile.style.backgroundImage = "url(" + profileInput.value + ")";
+            profileInput.value = "";
         };
 
         function saveCSV() {
