@@ -75,15 +75,16 @@ body {
 
 .edit-section button {
     padding: 10px;
-    background-color: bisque;
+    background-color: #253979;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    color: #f0f0f0;
 }
 
 .edit-section button:hover {
-    background-color: #ffebcc;
+    background-color: #253979;
 }
 
 .phone-book-section {
@@ -99,15 +100,16 @@ body {
 
 .phone-book-section button {
     padding: 10px;
-    background-color: bisque;
+    background-color: #253979;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    color: #f0f0f0;
 }
 
 .phone-book-section button:hover {
-    background-color: #ffebcc;
+    background-color:#253979;
 }
 
 .grid-container {
