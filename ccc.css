@@ -1,0 +1,26 @@
+.username{
+    text-align: center;
+    font-weight: bold;
+}
+.profile{
+    width: 183px;
+    height: 183px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZnj5tZCHCUraWiJXOd0ppNEoyXEKU-N5rQQ&s);
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.notify{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(255, 156, 217);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
